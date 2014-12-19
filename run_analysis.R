@@ -87,6 +87,9 @@ tblf <- cbind(tbla, tbld)
 
 #use melt to reshape to long 4 column :activity - subjectnumber - measurecategory - measurevalue
 md <- melt(tblf, c("activity", "subjectnumber"), value.name = "mean")
+
+
+# aggregate the data by calculating a mean value for each type of measuremenet by Subject and activitytype
 tbl <- aggregate(md$mean, list(subject = md$subjectnumber, activity = md$activity,  variable = md$variable),mean)
 # give the signal variables a more informative title
 
