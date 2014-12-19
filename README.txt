@@ -27,6 +27,7 @@ Finally we aggregate the above table to produce a tidy table of all the means pe
 Subject number  - Activity type - Signal Type - Mean value
 
 
+
 REFERENCES
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly 
 Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
@@ -38,13 +39,20 @@ ________________________________________________________________________________
 
 Codebook
 
-column 1 is the number of the subject for which these data were collected.  There are 30 subjects who participated in this study and so are identified simply as subjects 1 to 30
+This file contains a 4 column dataset of Means of all the mean and std measuremements from the Human Activity Recognition Using Smartphones Dataset Version 1.0
+(Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, 2012) summarized by Subject and Actiity type. 
+
+Each row identies a mean value of a partucular signal type measurement for a particular subject and a particular activity. 
 
 
-column 2 is the type of activity on which the measurements take place
+COLUMN 1 is the number of the subject for which these data were collected.  
+	There are 30 subjects who participated in this study and so are identified simply as subjects 1 to 30
+
+
+COLUMN 2 is the type of activity on which the measurements take place
 	the 6 activities are walking, walkingupstairs, walkingdownstairs, sitting, standing, laying
 
-column 3 identifies the signal type being measured
+COLUMN 3 identifies the signal type being measured
 
 	From the description of the original dataset (Anguita et al, 2012):
 
@@ -87,7 +95,7 @@ column 3 identifies the signal type being measured
 
 
 
-column 4 contains the mean values of each measurement type by subject and acvitity
+COLUMN 4 contains the mean values of each measurement type by subject and activity
 
 
 
