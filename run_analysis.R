@@ -1,21 +1,22 @@
 library(dplyr)
 library(reshape2)
 
-#setwd("D:/DATA SCIENCE/GETTINGDATA/UCI HAR Dataset")
+#uncomment to run on local machine
+#setwd("D:/DATA SCIENCE/GETTINGDATA/")
 
 ## read the training subject list file - 7352 entries with values from 1 to 30 
-trainsub <- read.table("./train/subject_train.txt")
+trainsub <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 ## read the training subject list file - 7352 entries with values from 1 to 30 
-testsub <- read.table("./test/subject_test.txt")
+testsub <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 
 
 ##read the training and test data sets
 
-trainset <- read.table("./train/X_train.txt") # 561 observations of 7352 variables
-testset <- read.table("./test/X_test.txt") # 561 observations of 7352 variables
+trainset <- read.table("./UCI HAR Dataset/train/X_train.txt") # 561 observations of 7352 variables
+testset <- read.table("./UCI HAR Dataset/test/X_test.txt") # 561 observations of 7352 variables
 
 ##read the labels for the above datasets, to be used as column headings after tweaking
-features <- read.table("./features.txt", stringsAsFactors = FALSE)
+features <- read.table("./UCI HAR Dataset/features.txt", stringsAsFactors = FALSE)
 
 ## make a list of the variable names from feature table
 featlist <- as.list(as.character(features[,2]))
@@ -31,8 +32,8 @@ featlist <- as.list(as.character(features[,2]))
 #
 
 # read the activity types for each set
-trainact <- read.table("./train/Y_train.txt") 
-testact <- read.table("./test/Y_test.txt") 
+trainact <- read.table("./UCI HAR Dataset/train/Y_train.txt") 
+testact <- read.table("./UCI HAR Dataset/test/Y_test.txt") 
 
 
 ### replace all numeric codes  with labels  # not the most elegant way to do this I'm sure, but it works 
