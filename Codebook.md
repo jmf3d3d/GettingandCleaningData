@@ -4,12 +4,16 @@
 Codebook
 
 This file contains a 4 column dataset of Means of all the mean and std measuremements from the Human Activity Recognition Using Smartphones Dataset Version 1.0
-(Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, 2012) summarized by Subject and Actiity type. 
+(Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto, 2012) summarized by Subject and Actiity type.   The original data set included 7352 observations for a training set
+and 2947 observations for a test set; both training and test set had 561 measurement variables for each of these observations.   For the dataset presented here the training and test data sets are combined.  
+There were 30 subjects performing 6 different kinds of activities.   This data set selects only the measurment values (of the 561 total) that were of means and standard deviations:  66 measurements and 10299 
+observations of these 66 variables from 30 subjects doing 6 different activities.  From these data we computed a mean value for each of the 66 measurement for each subject for each activity and result in the following 
+data set of 11880 (30 subjects by 6 activies by 66 measurements = 11880) means indexed by subject, activity, and measurment type as the three category variables (first three columns).  
 
 Each row identies a mean value of a partucular signal type measurement for a particular subject and a particular activity. 
 
 
-COLUMN 1 is the number of the subject for which these data were collected.  
+COLUMN 1 is the number of the subject for which these data were collected.  There are 6 activities for which the data were collected. 
 	There are 30 subjects who participated in this study and so are identified simply as subjects 1 to 30
 
 
