@@ -10,17 +10,17 @@ There were 30 subjects performing 6 different kinds of activities.   This data s
 observations of these 66 variables from 30 subjects doing 6 different activities.  From these data we computed a mean value for each of the 66 measurement for each subject for each activity and result in the following 
 data set of 11880 (30 subjects by 6 activies by 66 measurements = 11880) means indexed by subject, activity, and measurment type as the three category variables (first three columns).  
 
-Each row identies a mean value of a partucular signal type measurement for a particular subject and a particular activity. 
+Each row identifies a mean value of a particular signal type measurement for a particular subject and a particular activity. 
 
 
-COLUMN 1 is the number of the subject for which these data were collected.  There are 6 activities for which the data were collected. 
+COLUMN 1 is the number of the subject for which these data were collected.  
 	There are 30 subjects who participated in this study and so are identified simply as subjects 1 to 30
 
 
-COLUMN 2 is the type of activity on which the measurements take place
-	the 6 activities are walking, walkingupstairs, walkingdownstairs, sitting, standing, laying
+COLUMN 2 is the type of activity on which the measurements take place.   There are 6 activities for which the data were collected. 
+	The 6 activities are walking, walkingupstairs, walkingdownstairs, sitting, standing, laying
 
-COLUMN 3 identifies the signal type being measured
+COLUMN 3 identifies the signal type being measured - there are 66 different signal types. 
 
 	From the description of the original dataset (Anguita et al, 2012):
 
@@ -63,7 +63,8 @@ COLUMN 3 identifies the signal type being measured
 
 
 
-COLUMN 4 contains the mean values of each measurement type by subject and activity
+COLUMN 4 contains the mean acceleration values of each measurement type by subject and activity in standard gravity units 'g'
+
 
 
 
